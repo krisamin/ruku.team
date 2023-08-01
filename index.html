@@ -1,0 +1,215 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RUKU - 헬로뉴월드 포트폴리오">
+    <meta property="og:description" content="세상을 바꾸는 팀, RUKU.">
+    <meta property="og:image" content="/images/preview.png">
+    <meta property="og:url" content="https://cresent.team">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://cresent.team">
+    <title>RUKU - 헬로뉴월드 포트폴리오</title>
+    <meta name="description" content="세상을 바꾸는 팀, RUKU.">
+
+    <style>
+      @import url('https://fonts.2w.vc/suit/static/font.css');
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: 'SUIT', sans-serif;
+        overflow: hidden;
+
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+        -webkit-touch-callout:none !important;
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -webkit-user-drag:none;
+        cursor: default;
+      }
+      html, body {
+        width: 100%; height: 100%;
+        overscroll-behavior: none;
+      }
+      html {
+        background-color: #ffffff;
+      }
+      body {
+        overflow-y: auto;
+      }
+      img {
+        width: 100%;
+        padding-top: 56.25%;
+        object-fit: cover;
+      }
+
+      #topbar {
+        position: fixed;
+        z-index: 1;
+        top: 0; left: 0; right: 0;
+        height: 64px;
+        background-color: #ffffffcc;
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      #topbar p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #444242;
+        margin-left: 24px;
+      }
+      #topbar a {
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #e40713;
+        color: #ffffff !important;
+        padding: 10px 16px;
+        border-radius: 100px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 12px;
+      }
+      #topbar p#full {
+        display: block;
+      }
+      #topbar p#mini {
+        display: none;
+      }
+      @media (max-width: 440px) {
+        #topbar p#full {
+          display: none;
+        }
+        #topbar p#mini {
+          display: block;
+        }
+      }
+
+      #images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        padding-top: 64px;
+      }
+      #image {
+        position: relative;
+        padding-top: calc(56.25% + 0.11vw);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 0.11vw solid #4442421A;
+      }
+      #images #image:last-child {
+        border-bottom: none;
+      }
+
+      .lds-heart {
+        z-index: -1;
+        display: inline-block;
+        position: absolute;
+        top: 50%; left: 50%;
+        width: 80px;
+        height: 80px;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transform-origin: 40px 40px;
+      }
+      .lds-heart div {
+        top: 32px;
+        left: 32px;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background: #e40713;
+        animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      .lds-heart div:after,
+      .lds-heart div:before {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: #e40713;
+      }
+      .lds-heart div:before {
+        left: -24px;
+        border-radius: 50% 0 0 50%;
+      }
+      .lds-heart div:after {
+        top: -24px;
+        border-radius: 50% 50% 0 0;
+      }
+      @keyframes lds-heart {
+        0% {
+          transform: scale(0.95);
+        }
+        5% {
+          transform: scale(1.1);
+        }
+        39% {
+          transform: scale(0.85);
+        }
+        45% {
+          transform: scale(1);
+        }
+        60% {
+          transform: scale(0.95);
+        }
+        100% {
+          transform: scale(0.9);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="topbar">
+      <p id="full">RUKU - 헬로뉴월드 포트폴리오</p>
+      <p id="mini">RUKU 포트폴리오</p>
+      <a id="download" href="./RUKU - 헬로뉴월드 포트폴리오.pdf" download>다운로드</a>
+    </div>
+    <div id="images">
+      <div id="image" style="background-image: url('./images/Page 0001.webp');">
+        <div class="lds-heart"><div></div></div>
+      </div>
+      <div id="image" style="background-image: url('./images/Page 0002.webp');">
+        <div class="lds-heart"><div></div></div>
+      </div>
+      <div id="image" style="background-image: url('./images/Page 0003.webp');">
+        <div class="lds-heart"><div></div></div>
+      </div>
+      <div id="image" style="background-image: url('./images/Page 0004.webp');">
+        <div class="lds-heart"><div></div></div>
+      </div>
+      <div id="image" style="background-image: url('./images/Page 0005.webp');">
+        <div class="lds-heart"><div></div></div>
+      </div>
+      <div id="image" style="background-image: url('./images/Page 0006.webp');">
+        <div class="lds-heart"><div></div></div>
+      </div>
+      <div id="image" style="background-image: url('./images/Page 0007.webp');">
+        <div class="lds-heart"><div></div></div>
+      </div>
+      <div id="image" style="background-image: url('./images/Page 0008.webp');">
+        <div class="lds-heart"><div></div></div>
+      </div>
+      <div id="image" style="background-image: url('./images/Page 0009.webp');">
+        <div class="lds-heart"><div></div></div>
+      </div>
+      <div id="image" style="background-image: url('./images/Page 0010.webp');">
+        <div class="lds-heart"><div></div></div>
+      </div>
+    </div>
+  </body>
+</html>
