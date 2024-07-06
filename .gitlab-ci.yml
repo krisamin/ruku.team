@@ -21,8 +21,8 @@ deploy-job:
     - docker rm -f $CI_PROJECT_PATH_SLUG || true
     - >
       docker create
-        --name $CI_PROJECT_PATH_SLUG
-        --restart always
-        --network proxy
-        $CI_REGISTRY_IMAGE:latest
+      --name $CI_PROJECT_PATH_SLUG
+      --restart always
+      --network proxy
+      $CI_REGISTRY_IMAGE:latest
     - docker start $CI_PROJECT_PATH_SLUG
